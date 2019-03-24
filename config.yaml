@@ -24,6 +24,8 @@ collections:
                     - 'https://qa.hypothes.is/'
                     - 'https://cdn.hypothes.is/'
                     - '/assets/'
+                    - 'https://cdn.jsdelivr.net/'
+                    - 'https://unpkg.com/'
 
                 #skip_createElement: true
 
