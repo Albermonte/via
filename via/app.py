@@ -70,7 +70,7 @@ def app(environ, start_response):
 application = RequestHeaderSanitiser(app)
 application = ResponseHeaderSanitiser(application)
 application = Blocker(application)
-application = UserAgentDecorator(application, "Hypothesis-Via")
+application = UserAgentDecorator(application, "ShortNIM")
 application = ConfigExtractor(application)
 application = wsgi.DispatcherMiddleware(
     application,
