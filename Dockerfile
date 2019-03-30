@@ -56,6 +56,6 @@ ENV HTTPS_PROXY http://localhost:3128
 # Install app.
 COPY . .
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["supervisord", "-c" , "conf/supervisord.conf"]
