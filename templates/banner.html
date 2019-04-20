@@ -1,5 +1,6 @@
 <!-- Set canonical url -->
 <link rel="canonical" href="{{ cdx.url }}"/>
+<div id="shortnim_addon"></div>
 
 <!-- Inject Hypothesis -->
 <script>
@@ -13,13 +14,10 @@ if (window.location.pathname.indexOf('/if_/') === 0) {
   return;
 }
 
-var embed_script = document.createElement("script");
-embed_script.src = "{{ h_embed_url }}";
-document.head.appendChild(embed_script);
 
-var div = document.createElement("div");
-div.id ="shortnim_addon"
-document.body.appendChild(div);
+var embed_script = document.createElement("script");
+embed_script.src = "https://cdn.jsdelivr.net/gh/Albermonte/shortnim-addon@0.1.2/dist/js/app.4df45359.js";
+document.head.appendChild(embed_script);
 
 {% include "client_config.js.jinja2" %}
 })();
